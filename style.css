@@ -1,0 +1,144 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+main {
+  min-height: 100vh;
+  background-color: hsl(204, 43%, 93%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.4rem;
+}
+
+.card {
+  max-width: 130rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+.card-upper,
+.card-lower-one,
+.card-lower-two {
+  padding: 2.4rem 4.8rem 4.8rem;
+}
+
+.card-upper {
+  grid-column: span 2;
+  background-color: #fff;
+}
+
+.heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 2.4rem;
+}
+
+.sub-heading {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 1.6rem;
+}
+
+.upper-text {
+  font-size: 1.4rem;
+  color: hsl(218, 22%, 67%);
+}
+
+.upper-text:not(:last-child) {
+  margin-bottom: 0.7rem;
+}
+
+.card-lower-one {
+  background-color: hsl(179, 62%, 43%);
+}
+
+.heading-secondary {
+  font-size: 1.6rem;
+  color: hsl(204, 43%, 93%);
+  font-weight: 700;
+  margin-bottom: 2.4rem;
+}
+
+.pricing {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.6rem;
+}
+
+.price {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: hsl(204, 43%, 93%);
+}
+
+.pricing-unit {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.705);
+}
+
+.access {
+  color: hsl(204, 43%, 93%);
+  margin-bottom: 3.6rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+  background-color: hsl(71, 73%, 54%);
+  color: hsl(204, 43%, 93%);
+  text-align: center;
+  padding: 1.6rem 3.2rem;
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.15);
+}
+
+.card-lower-two {
+  background-color: hsl(179, 47%, 60%);
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.list li a:link,
+.list li a:visited {
+  text-decoration: none;
+  color: hsl(204, 43%, 93%);
+}
+
+@media (max-width: 376px) {
+  .card-lower-one,
+  .card-lower-two {
+    grid-column: span 2;
+    text-align: center;
+  }
+
+  .pricing {
+    justify-content: center;
+  }
+}
